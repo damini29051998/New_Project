@@ -1,0 +1,48 @@
+.flex {
+    display: flex;
+}
+.pd-30 {
+    padding: 30px;
+}
+
+.mg-l10 {
+    padding-left: 10px;
+}
+
+.mg-10 {
+    margin: 10px;
+}
+
+.column-dir {
+    display: flex;
+    flex-direction: column;
+}
+
+.radius {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.gray {
+    background-color: gray;
+    color: rgb(80, 5, 149);
+    font-size: 14px;
+}
+
+.green  {
+    background-color: white;
+    color: rgb(5, 149, 24);
+    font-size: 14px;
+    border: black;
+    border: 1px solid rgb(5, 149, 24);
+}
+
+.bg-green  {
+    background-color: rgb(5, 149, 24);
+    color: white;
+    font-size: 14px;
+    border: black;
+    border: 1px solid rgb(5, 149, 24);
+}
