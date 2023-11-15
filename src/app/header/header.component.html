@@ -3,7 +3,7 @@
     <div class="header-left col-md-9">
       <div class="col-md-6">
         <mat-form-field style="display: block;">
-          <mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
+          <mat-select [disableOptionCentering]="true" #select1 placeholder="Search Profiles">
             <mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
             <mat-option *ngFor="let item of filteredList2" [value]="item">
               {{item}}

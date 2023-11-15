@@ -8,7 +8,7 @@
       <div class="col-md-2">
         <label>Region</label>
         <mat-form-field style="display: block; padding-right: 5px;" class="col-md-12">
-          <mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
+          <mat-select [disableOptionCentering]="true" #select1 placeholder="Region">
             <mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
             <mat-option *ngFor="let item of filteredList2" [value]="item">
               {{item}}
@@ -19,7 +19,7 @@
       <div class="col-md-2">
         <label>Country</label>
         <mat-form-field style="display: block; padding-right: 5px;" class="col-md-12">
-          <mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
+          <mat-select [disableOptionCentering]="true" #select1 placeholder="Country">
             <mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
             <mat-option *ngFor="let item of filteredList2" [value]="item">
               {{item}}
@@ -30,7 +30,7 @@
       <div class="col-md-2">
         <label>State</label>
         <mat-form-field style="display: block; padding-right: 5px;" class="col-md-12">
-          <mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
+          <mat-select [disableOptionCentering]="true" #select1 placeholder="State">
             <mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
             <mat-option *ngFor="let item of filteredList2" [value]="item">
               {{item}}
@@ -41,7 +41,7 @@
       <div class="col-md-2">
         <label>City</label>
         <mat-form-field style="display: block; padding-right: 5px;" class="col-md-12">
-          <mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
+          <mat-select [disableOptionCentering]="true" #select1 placeholder="City">
             <mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
             <mat-option *ngFor="let item of filteredList2" [value]="item">
               {{item}}
@@ -52,7 +52,7 @@
       <div class="col-md-2">
         <label>Company</label>
         <mat-form-field style="display: block; padding-right: 5px;" class="col-md-12">
-          <mat-select [disableOptionCentering]="true" #select1 placeholder="Auto Focus">
+          <mat-select [disableOptionCentering]="true" #select1 placeholder="Company">
             <mat-select-filter *ngIf="select1.focused" [array]="variables" (filteredReturn)="filteredList2 =$event"></mat-select-filter>
             <mat-option *ngFor="let item of filteredList2" [value]="item">
               {{item}}
