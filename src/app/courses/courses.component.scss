@@ -1,11 +1,16 @@
 .flex {
     display: flex;
 }
+
+.bg-white {
+    background-color: white;
+}
+
 .pd-30 {
     padding: 30px;
 }
 
-.mg-l10 {
+.pd-l10 {
     padding-left: 10px;
 }
 
@@ -39,10 +44,29 @@
     border: 1px solid rgb(5, 149, 24);
 }
 
+.orange {
+    background-color: rgb(248, 121, 58);
+    color: white;
+    font-size: 14px;
+    border: black;
+    border: 1px solid rgb(248, 121, 58);
+}
+
+.red  {
+    background-color: rgb(149, 5, 5);
+    color: white;
+    font-size: 14px;
+    border: 1px solid rgb(149, 5, 5);
+}
+
 .bg-green  {
     background-color: rgb(5, 149, 24);
     color: white;
     font-size: 14px;
     border: black;
     border: 1px solid rgb(5, 149, 24);
+}
+
+.mg-l10 {
+    margin-left: 10px;
 }

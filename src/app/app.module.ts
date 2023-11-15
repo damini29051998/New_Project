@@ -16,6 +16,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { CoursesComponent } from './courses/courses.component';
 import { CardComponent } from './courses/card/card.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSelectModule } from '@angular/material/select';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,7 @@ import { CardComponent } from './courses/card/card.component';
     SidenavComponent,
     CoursesComponent,
     CardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,8 @@ import { CardComponent } from './courses/card/card.component';
     MatIconModule,
     MatDividerModule,
     MatListModule,
+    MatProgressBarModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,24 +1,41 @@
-<p>card works!</p>
-
-<div class="pd-15">
-    <div>
-        <img src="./assets/user.jpg" alt="" class="user-image mr-1 p-2" />
-        <span class="font-700">UI Science Progress Experiment.</span>
+<div class="space-between" style="padding-right:30px">
+    <div><h2 class="h-name"><mat-icon>edit</mat-icon> Courses</h2></div>
+    <div style="color:#b8b3b3; padding-top: 15px">
+        <mat-icon>view_headline</mat-icon>
+        <mat-icon>view_module</mat-icon>
     </div>
-    <div>
-        Apple's senior vice president at interner Software and Services
-    </div>
-    <div>
-
-    </div>
-    <div>
-        <div>
-            <mat-icon>people_outline</mat-icon>
-            <span>180 Student</span>
-        </div>
-        <div>
-            <mat-icon>watch_later</mat-icon>
-            <span>16 Hours</span>
+</div>
+<div class="card-data">
+    <div *ngFor="let opt of list" class="list">
+        <div class="pd-15">
+            <div class="flex">
+                <img src="{{opt.image}}" alt="" class="user-image mr-1 p-2" />
+                <div class="font-700" style="padding-top: 12px;">{{opt.cName}}</div>
+            </div>
+            <div class="gray ft700">
+                {{opt.description}}
+            </div>
+            <div class="justify" style="padding: 25px 0;">
+                <div class="font-700">
+                    <span class="gray">TAVSIYE ORANI</span>
+                    <br>
+                    {{opt.percentComplete}}% Complete
+                    <mat-progress-bar mode="determinate" value="{{opt.percentComplete}}"></mat-progress-bar>
+                </div>
+                <div class="flex">
+                    <span class="gray ft700">TAVSIYE EDENLER</span>
+                </div>
+            </div>
+            <div class="justify">
+                <div class="flex">
+                    <mat-icon class="gray">people_outline</mat-icon>
+                    <span class="gray ft700">{{opt.enrollStudent}} Student</span>
+                </div>
+                <div class="flex">
+                    <mat-icon class="gray">watch_later</mat-icon>
+                    <span class="gray ft700">{{opt.watchLater}} Hours</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

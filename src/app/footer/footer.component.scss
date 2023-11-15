@@ -1,0 +1,32 @@
+.flex {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+}
+.pd-t20 {
+    padding-top: 20px;
+}
+
+.btm {
+    font-size: 14px;
+    color: #b8b3b3;
+    font-weight: 600;
+}
+
+.btm-h {
+    font-size: 18px;
+    color: gray;
+    font-weight: 600;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-col {
+    color: #7e7d7d;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 30px;
+}

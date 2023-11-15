@@ -39,3 +39,101 @@ mat-toolbar {
 .mg-10 {
   margin: 10px;
 }
+
+
+.inner-wrap input,
+.list {
+  width: 16rem;
+  height: 1.5rem;
+  outline: none;
+  padding: 5px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+.inner-wrap .list {
+  height: auto;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+.inner-wrap .list label {
+  background-color: #4267b2;
+  color: white;
+  margin-right: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+.outer-wrap .inner-wrap .displayEmpty {
+  height: 1.5rem;
+}
+span {
+  font-size: 16px;
+  color: gray;
+  padding: 5px;
+}
+.inner-wrap {
+  width: 655px;
+  margin: auto;
+}
+
+:host ::ng-deep .mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label, .mat-form-field-appearance-legacy.mat-form-field-can-float .mat-input-server:focus+.mat-form-field-label-wrapper .mat-form-field-label {
+  transform: translateY(-1.28125em) scale(0.75) perspective(100px) translateZ(0.001px);
+  -ms-transform: translateY(-1.28125em) scale(0.75);
+  width: 133.3333333333%;
+  color: white;
+  display: none;
+}
+
+:host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline {
+  height: 0 !important;
+}
+
+:host ::ng-deep .mat-form-field-wrapper{
+  border: 2px solid #999;
+  padding: 8px;
+  /* width: max-content; */
+  font-size: 14px;
+  height: 45px;
+  border-radius: 50px;
+}
+
+:host ::ng-deep .mat-form-field-infix {
+  border-top: 0;
+}
+
+:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple, .mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+  display: none;
+}
+
+:host ::ng-deep .mat-form-field-empty.mat-form-field-label, .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  padding-left: 20px;
+}
+
+:host ::ng-deep .mat-select-trigger {
+  display: flex !important;
+  flex-direction: column-reverse !important;
+}
+
+.green  {
+  background-color: white;
+  color: rgb(5, 149, 24);
+  font-size: 14px;
+  border: black;
+  border: 1px solid rgb(5, 149, 24);
+}
+
+.radius {
+  border: 1px solid rgb(5, 149, 24);
+  padding: 10px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.header-left {
+  margin-top: 9px; 
+  width: 70%;
+  display: flex;
+
+}

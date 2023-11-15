@@ -1,46 +1,102 @@
 .pd-15 {
-    padding: 15px;
-    background-color: white;
-    width: 30%;
+  padding: 15px;
+  background-color: white;
 }
 
 .font-700 {
-    font-weight: 700;
-    color:gray;
+  font-weight: 700;
+  color: gray;
 }
+
 mat-toolbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-  
+
 button {
-    outline: none;
-    border: 0;
-    background: transparent;
+  outline: none;
+  border: 0;
+  background: transparent;
 }
-  .user {
-    font-size: 14px;
+.flex {
+  display: flex;
+}
+
+.user {
+  font-size: 14px;
+}
+
+mat-toolbar {
+  background: #f7f7f7;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+
+  &-icon {
+    height: 18px;
+    font-size: 16px;
   }
-  mat-toolbar {
-    background: #f7f7f7;
+}
+
+::ng-deep {
+  .mat-menu-content {
+    width: 160px;
   }
-  .user-image {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    &-icon {
-      height: 18px;
-      font-size: 16px;
-    }
+}
+
+.mg-10 {
+  margin: 10px;
+}
+
+.justify {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gray {
+  color: #b8b3b3;
+}
+
+.ft700 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: green;
   }
   
-  ::ng-deep {
-    .mat-menu-content {
-      width: 160px;
-    }
+  ::ng-deep .mat-progress-bar-buffer {
+  background: #baf8d5;
   }
   
-  .mg-10 {
-    margin: 10px;
+  ::ng-deep .mat-progress-bar {
+  border-radius: 2px;
   }
+
+.list {
+  width: 33%; 
+  padding: 10px
+}
+.card-data {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 20px;
+}
+
+.h-name {
+  padding: 10px 0 0 30px;
+  font-size: 20px;
+  color: green;
+  font-weight: 700;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
