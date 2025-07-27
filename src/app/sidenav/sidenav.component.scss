@@ -56,3 +56,7 @@
   font-weight: 100;
   letter-spacing: 1px;
 }
+
+:host ::ng-deep .mdc-list-item__primary-text {
+  color: white !important;
+}

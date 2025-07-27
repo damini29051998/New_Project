@@ -67,7 +67,10 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "admin-panel-layout:build"
+            "browserTarget": "admin-panel-layout:build",
+            "host": "0.0.0.0",
+            "allowedHosts": ["all"],
+            "disableHostCheck": true
           },
           "configurations": {
             "production": {
@@ -127,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "admin-panel-layout"
+  "defaultProject": "admin-panel-layout",
+  "cli": {
+    "analytics": false
+  }
 }
